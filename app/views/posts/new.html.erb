@@ -1,6 +1,6 @@
-<h1>EL EQUELETO SE BAILA ASI</h1>
-
-<%= form_for :post, url: posts_path do |f| %>
+<div id="page_wrapper">
+  <h1>New Post</h1>
+  <%= form_for :post, url: posts_path do |f| %>
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
@@ -13,4 +13,6 @@
 
   <p>
     <%= f.submit %>
-<% end %>
+  </p>
+  <% end %>
+</div>
